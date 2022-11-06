@@ -1,0 +1,60 @@
+[
+    {
+        "company": "PT. Abhimantra Sistem Solusindo",
+        "position": "Android Developer",
+        "start_date": "July 2016",
+        "end_date": "January 2019",
+        "tool":[],
+        "task": [
+            "Work with project team to produce good mobile apps",
+            "Cooperate with UX / UI Design Team & Back End team",
+            "Gathering a User Requirement from client",
+            "Created a mobile e-learning application",
+            "Developed a mobile commerce application to assist the sales of catering food",
+            "Developed a mobile applications for the safety of mining operation",
+            "Developed a mobile application for booking doctor at hospital"
+        ]
+    },
+    {
+        "company": "PT. Safepedia Global Teknologi",
+        "position": "Android Developer",
+        "start_date": "January 2019",
+        "end_date": "April 2019",
+        "tool":[],
+        "task": [
+            "Work with project team to produce good mobile apps",
+            "Cooperate with UX / UI Design Team & Back End team",
+            "Developed a mobile applications for the safety of mining operation"
+        ]
+    },
+    {
+        "company": "PT. Padimas Inovasi Teknologi",
+        "position": "Mobile Developer",
+        "start_date": "May 2019",
+        "end_date": "September 2022",
+        "tool":[],
+        "task": [
+            "Work with project team to produce good apps",
+            "Cooperate with UX / UI Design Team & Back End team",
+            "Maintain and enhance a car rental mobile application",
+            "Create a promo module for car rental mobile apps",
+            "Developed a desktop and web app to manage the stock of mining products"
+            
+        ]
+    },
+    {
+        "company": "Freelance",
+        "position": "Mobile Developer",
+        "start_date": "May 2022",
+        "end_date": "Present",
+        "tool":[],
+        "task": [
+            "Work with client to produce good apps",
+            "Developing a mobile application for user from City Government, which allows users to easy take attendance, request paid leave, and display employee information",
+            "Developed a mobile applications for the safety of mining operation",
+            "Create Incident module for incident Reporting",
+            "Create Hazard module for Hazard Reporting",
+            "Create a absent module"
+        ]
+    }
+]
