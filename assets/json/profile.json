@@ -1,0 +1,55 @@
+{
+    "name": "Reno Rizky Ollantino",
+    "place_date_birth": "Jakarta, 21 December 1990",
+    "residence": "Bekasi, Indonesia",
+    "gender": "Male",
+    "religion": "Islam",
+    "marital_status": "Single",
+    "skill": {
+        "programming_language": [
+            "Java",
+            "Kotlin",
+            "Dart",
+            "SQL"
+        ],
+        "tools": [
+            "Android Studio",
+            "Visual Studio Code",
+            "Navicat",
+            "Xcode"
+        ],
+        "other_skill": [
+            "Microsoft Office Famliy",
+            "Microsoft Azure",
+            "Github",
+            "Gitlab",
+            "Azure DevOps",
+            "MVC Architecture & OOP",
+            "Postman",
+            "Flutter BLOC State Management"
+        ]
+    },
+    "education": [
+        {
+            "place_study": "Gunadarma University",
+            "degree": "Information Management System - Master’s Degree (S2)",
+            "location": "Depok, Indonesia",
+            "gpa": "3.54",
+            "year": "2014 - 2017"
+        },
+        {
+            "place_study": "Gunadarma University",
+            "degree": "Informatics Engineering - Bachelor’s Degree (S1) ",
+            "location": "Depok, Indonesia",
+            "gpa": "3.22",
+            "year": "2009 - 2013"
+        },
+        {
+            "place_study": "Tunas Jakasampurna Senior High School",
+            "degree": "Senior High School",
+            "location": "Bekasi, Indonesia",
+            "gpa": null,
+            "year": "2006 - 2009"
+        }
+    ]
+}

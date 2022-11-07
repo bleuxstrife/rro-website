@@ -13,6 +13,17 @@ TextStyle content = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
+TextStyle contentBold = TextStyle(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w700,
+);
+
+TextStyle smallContentPrimary = TextStyle(
+  fontSize: 10.sp,
+  fontWeight: FontWeight.w200,
+  color: systemPrimaryColor
+);
+
 TextStyle contentPrimary = TextStyle(
   fontSize: 12.sp,
   fontWeight: FontWeight.w400,

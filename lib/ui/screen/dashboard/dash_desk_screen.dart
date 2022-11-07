@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rro_web/bloc/dashboard/dash_cubit.dart';
 import 'package:rro_web/bloc/experience/exp_cubit.dart';
+import 'package:rro_web/bloc/profile/pro_cubit.dart';
 import 'package:rro_web/utils/colors.dart';
 
-import '../experience/exp_desk_screen.dart';
 
 class DashDeskScreen extends StatelessWidget {
   const DashDeskScreen({Key? key}) : super(key: key);
@@ -15,7 +15,8 @@ class DashDeskScreen extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => DashCubit()),
-        BlocProvider(create: (_) => ExpCubit()..init(context))
+        BlocProvider(create: (_) => ExpCubit()..init(context)),
+        BlocProvider(create: (_) => ProCubit()..init(context))
       ],
       child: Builder(builder: (context) {
         final cubitWatch = context.watch<DashCubit>();
@@ -23,22 +24,21 @@ class DashDeskScreen extends StatelessWidget {
             body: Padding(
           padding: const EdgeInsets.all(16),
           child: CollapsibleSidebar(
-            backgroundColor: AppColors.primary[50]!,
-            selectedIconBox: systemPrimaryColor,
-            selectedIconColor: systemWhiteColor,
-            unselectedIconColor: systemPrimaryColor,
-            unselectedTextColor: systemPrimaryColor,
-            items: cubitWatch.items,
-            sidebarBoxShadow: [
-              BoxShadow(
-                color: AppColors.primary[200]!,
-                blurRadius: 10,
-                spreadRadius: 0.01,
-                offset: const Offset(3, 3),
-              ),
-            ],
-            body: cubitWatch.child
-          ),
+              backgroundColor: AppColors.primary[50]!,
+              selectedIconBox: systemPrimaryColor,
+              selectedIconColor: systemWhiteColor,
+              unselectedIconColor: systemPrimaryColor,
+              unselectedTextColor: systemPrimaryColor,
+              items: cubitWatch.items,
+              sidebarBoxShadow: [
+                BoxShadow(
+                  color: AppColors.primary[200]!,
+                  blurRadius: 10,
+                  spreadRadius: 0.01,
+                  offset: const Offset(3, 3),
+                ),
+              ],
+              body: cubitWatch.child),
         ));
       }),
     );
