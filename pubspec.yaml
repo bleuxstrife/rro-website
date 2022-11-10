@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 0.0.3+3
+version: 0.0.4+4
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
@@ -55,7 +55,11 @@ flutter:
     - assets/images/trinusa/trinusa/
     - assets/images/trinusa/pbl/
     - assets/images/trinusa/tti/
-
+    - assets/images/nemob/home/
+    - assets/images/nemob/login/
+    - assets/images/nemob/order/
+    - assets/images/nemob/reservation/
+    - assets/images/merdeka/
   fonts:
     - family: Proxima
       fonts:
