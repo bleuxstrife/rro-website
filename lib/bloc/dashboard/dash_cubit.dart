@@ -4,6 +4,7 @@ import 'package:rro_web/bloc/base/base_cubit.dart';
 import 'package:rro_web/constant/dashboard_constant.dart';
 import 'package:rro_web/ui/screen/experience/exp_desk_screen.dart';
 import 'package:rro_web/ui/screen/profile/pro_desk_screen.dart';
+import 'package:rro_web/ui/screen/project/project_desk_screen.dart';
 
 class DashCubit extends BaseCubit {
   int _index = DashMenuConstant.home;
@@ -26,7 +27,7 @@ class DashCubit extends BaseCubit {
         child = const ExpDeskScreen();
         break;
       case DashMenuConstant.project:
-        child = Container();
+        child = const ProjectDeskScreen();
         break;
     }
 

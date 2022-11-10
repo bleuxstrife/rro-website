@@ -9,6 +9,7 @@ class Space {
   static const vLarge = SizedBox(height: 32);
 
   static const h7 = SizedBox(width: 7);
+  static const hSmallest = SizedBox(width: 4);
   static const hSmall = SizedBox(width: 8);
   static const hMedium = SizedBox(width: 16);
   static const hLarge = SizedBox(width: 32);

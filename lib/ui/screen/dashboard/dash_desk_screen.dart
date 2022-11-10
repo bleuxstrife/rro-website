@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rro_web/bloc/dashboard/dash_cubit.dart';
 import 'package:rro_web/bloc/experience/exp_cubit.dart';
 import 'package:rro_web/bloc/profile/pro_cubit.dart';
+import 'package:rro_web/bloc/project/project_cubit.dart';
 import 'package:rro_web/utils/colors.dart';
-
 
 class DashDeskScreen extends StatelessWidget {
   const DashDeskScreen({Key? key}) : super(key: key);
@@ -16,7 +16,8 @@ class DashDeskScreen extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => DashCubit()),
         BlocProvider(create: (_) => ExpCubit()..init(context)),
-        BlocProvider(create: (_) => ProCubit()..init(context))
+        BlocProvider(create: (_) => ProCubit()..init(context)),
+        BlocProvider(create: (_) => ProjectCubit()..init(context))
       ],
       child: Builder(builder: (context) {
         final cubitWatch = context.watch<DashCubit>();

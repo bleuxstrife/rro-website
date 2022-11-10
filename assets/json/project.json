@@ -1,0 +1,208 @@
+[
+    {
+        "name": "Simpeg",
+        "desc": "A mobile application for user from City Government, which allows users to easy take attendance, request paid leave, and display employee information.",
+        "tools": [
+            "Flutter",
+            "Firebase Notification",
+            "Html Editor"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": "https://play.google.com/store/apps/details?id=com.simpeg.kotaserang",
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "Nembayu",
+        "desc": "This project was to develop a mobile application to fill out brief reports for accidents, hazards, and inspections that occur on the mine site.",
+        "tools": [
+            "Flutter",
+            "Sqflite",
+            "Firebase Notification"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": "https://play.google.com/store/apps/details?id=com.nembayu.app",
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "Trinusa Stockpilling System",
+        "desc": "This project was to develop a desktop and web application for user from Mining Company, which allows users to easy manage the stock of mining products.",
+        "tools": [
+            "Flutter",
+            "Serial Port Integration With Weigh Indicator"
+        ],
+        "gallery": [
+            "assets/images/trinusa/login/001.PNG",
+            "assets/images/trinusa/login/002.PNG",
+            "assets/images/trinusa/home/001.PNG",
+            "assets/images/trinusa/home/002.PNG",
+            "assets/images/trinusa/home/003.PNG",
+            "assets/images/trinusa/home/004.PNG",
+            "assets/images/trinusa/home/005.PNG",
+            "assets/images/trinusa/trinusa/001.PNG",
+            "assets/images/trinusa/trinusa/002.PNG",
+            "assets/images/trinusa/trinusa/003.PNG",
+            "assets/images/trinusa/trinusa/004.PNG",
+            "assets/images/trinusa/trinusa/005.PNG",
+            "assets/images/trinusa/trinusa/006.PNG",
+            "assets/images/trinusa/trinusa/007.PNG",
+            "assets/images/trinusa/trinusa/008.PNG",
+            "assets/images/trinusa/pbl/001.PNG",
+            "assets/images/trinusa/pbl/002.PNG",
+            "assets/images/trinusa/pbl/003.PNG",
+            "assets/images/trinusa/pbl/004.PNG",
+            "assets/images/trinusa/pbl/005.PNG",
+            "assets/images/trinusa/pbl/006.PNG",
+            "assets/images/trinusa/tti/001.PNG",
+            "assets/images/trinusa/tti/002.PNG"
+        ],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": "http://trinusa.eastasia.cloudapp.azure.com/"
+    },
+    {
+        "name": "Tracker",
+        "desc": "A mobile application to monitor and control GPS devices on vehicles. In addition, it can also create a geofence area to monitor vehicles in the area",
+        "tools": [
+            "Flutter",
+            "Firebase Notification",
+            "Google Map"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "Nemob",
+        "desc": "This project was for maintain and enhance the mobile applications that are useful for making it easier for customers to rent a car.",
+        "tools": [
+            "Flutter",
+            "Firebase Notification",
+            "Midtrans"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": "https://play.google.com/store/apps/details?id=com.needmobil.app&hl=id&gl=US&pli=1",
+        "app_store_url": "https://apps.apple.com/id/app/nemob/id1170765913",
+        "website_url": null
+    },
+    {
+        "name": "Safepedia",
+        "desc": "Mobile application that serves to assist the process of incident reporting, inspection, and incident observation at mining sites.",
+        "tools": [
+            "Java",
+            "XML",
+            "ORMLite"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": "https://play.google.com/store/apps/details?id=com.safepedia.app.salus",
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "My Bunda",
+        "desc": "This project is to develop a mobile application for patients from the BUNDA hospital, which makes it easy to make an appointment with a doctor.",
+        "tools": [
+            "Java",
+            "XML",
+            "Firebase Notification"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": "https://play.google.com/store/apps/details?id=rsbunda.abhimantra.app",
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "BMHS",
+        "desc": "This project is to develop a mobile application for employees and doctors from the BUNDA hospital",
+        "tools": [
+            "Java",
+            "XML",
+            "Firebase Notification"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "Merdeka Safe",
+        "desc": "Mobile application that serves to assist the process of incident reporting, inspection, and incident observation at mining sites.",
+        "tools": [
+            "Java",
+            "XML",
+            "ORMLite"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "W-Safe",
+        "desc": "Mobile application that serves to assist the process of incident reporting, inspection, and incident observation at mining sites.",
+        "tools": [
+            "Java",
+            "XML",
+            "ORMLite"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "Homade",
+        "desc": "M-Commerce application for selling catering food.",
+        "tools": [
+            "Java",
+            "XML",
+            "ORMLite"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": "https://play.google.com/store/apps/details?id=com.app.home.made",
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "EduCourse",
+        "desc": "Mobile application that provides academic learning materials with media such as videos, documents, online classes, and online quizzes.",
+        "tools": [
+            "Java",
+            "XML",
+            "Midtrans",
+            "ORMLite"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": null
+    },
+    {
+        "name": "EduSpot",
+        "desc": "Mobile application that provides an information system to make it easier for teachers, students, and parents to monitor and process the learning at school.",
+        "tools": [
+            "Java",
+            "XML",
+            "ORMLite"
+        ],
+        "gallery": [],
+        "github_url": null,
+        "play_store_url": null,
+        "app_store_url": null,
+        "website_url": null
+    }
+]

@@ -54,3 +54,9 @@ TextStyle contentWhite = TextStyle(
   fontWeight: FontWeight.w400,
   color: systemWhiteColor
 );
+
+TextStyle contentWhiteBold = TextStyle(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w700,
+  color: systemWhiteColor
+);
