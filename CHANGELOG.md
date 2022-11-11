@@ -1,3 +1,7 @@
+# 0.0.5+5
+* Add Favicon
+* Add Loading Gif
+* Add Avatar Image
 # 0.0.4+4
 * Add more Project Content
 # 0.0.3+3

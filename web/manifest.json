@@ -1,11 +1,11 @@
 {
-    "name": "rro_web",
-    "short_name": "rro_web",
+    "name": "RRO",
+    "short_name": "RRO",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#e5e8f1",
+    "theme_color": "#e5e8f1",
+    "description": "My Website.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

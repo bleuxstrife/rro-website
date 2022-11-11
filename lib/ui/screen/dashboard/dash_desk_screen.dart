@@ -5,6 +5,7 @@ import 'package:rro_web/bloc/dashboard/dash_cubit.dart';
 import 'package:rro_web/bloc/experience/exp_cubit.dart';
 import 'package:rro_web/bloc/profile/pro_cubit.dart';
 import 'package:rro_web/bloc/project/project_cubit.dart';
+import 'package:rro_web/constant/dashboard_constant.dart';
 import 'package:rro_web/utils/colors.dart';
 
 class DashDeskScreen extends StatelessWidget {
@@ -25,6 +26,8 @@ class DashDeskScreen extends StatelessWidget {
             body: Padding(
           padding: const EdgeInsets.all(16),
           child: CollapsibleSidebar(
+              title: "RRO",
+              avatarImg: AssetImage(avatarImg),
               backgroundColor: AppColors.primary[50]!,
               selectedIconBox: systemPrimaryColor,
               selectedIconColor: systemWhiteColor,

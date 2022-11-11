@@ -17,6 +17,7 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return ResponsiveSizer(
         builder: (_, __, ___) => MaterialApp(
+          title: "RRO",
               theme: ThemeData(
                 fontFamily: 'Proxima',
                 colorScheme: ColorScheme(

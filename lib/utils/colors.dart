@@ -46,5 +46,6 @@ class AppColors {
 Color systemPrimaryColor = AppColors.primary[900]!;
 Color systemDarkPrimaryColor = AppColors.primary[900]!;
 Color systemAccentColor = AppColors.accent[100]!;
-Color systemBackgroudColor = AppColors.primary[100]!; Color systemWhiteColor = AppColors.primary[50]!;
+Color systemBackgroudColor = AppColors.primary[100]!;
+Color systemWhiteColor = AppColors.primary[50]!;
 const Color systemRedColor = Color(0xffd81920);

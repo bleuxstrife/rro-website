@@ -1,9 +1,9 @@
 name: rro_web
-description: A new Flutter project.
+description: My Portoflio Websiter.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 0.0.4+4
+version: 0.0.5+5
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
@@ -42,7 +42,6 @@ dev_dependencies:
   #Model Gen
   freezed: ^2.2.0
   build_runner:
-  flutter_gen_runner:
   json_serializable:
 
 flutter:
@@ -50,6 +49,7 @@ flutter:
 
   assets:
     - assets/
+    - assets/images/
     - assets/images/trinusa/home/
     - assets/images/trinusa/login/
     - assets/images/trinusa/trinusa/
@@ -64,10 +64,4 @@ flutter:
     - family: Proxima
       fonts:
         - asset: assets/fonts/proxima_regular.otf
-
-flutter_gen:
-  integrations:
-    flutter_svg: true
-  output: lib/gen/
-  line_length: 80
 
