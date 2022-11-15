@@ -95,16 +95,14 @@ class GalleryDetail extends StatelessWidget {
   }
 
   Widget _mainSegment(BuildContext context) {
-    return Expanded(
-      child: Container(
-         width: MediaQuery.of(context).size.width,
-         height:MediaQuery.of(context).size.height,
-          padding: const EdgeInsets.all(16.0),
-          child: PhotoView(
-            backgroundDecoration: BoxDecoration(color: systemWhiteColor),
-            imageProvider: AssetImage(path),
-            minScale: 0.3,
-          )),
-    );
+    return Container(
+       width: MediaQuery.of(context).size.width,
+       height:MediaQuery.of(context).size.height,
+        padding: const EdgeInsets.all(16.0),
+        child: PhotoView(
+          backgroundDecoration: BoxDecoration(color: systemWhiteColor),
+          imageProvider: AssetImage(path),
+          minScale: 0.3,
+        ));
   }
 }

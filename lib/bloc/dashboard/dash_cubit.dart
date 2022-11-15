@@ -5,6 +5,7 @@ import 'package:rro_web/constant/dashboard_constant.dart';
 import 'package:rro_web/ui/screen/experience/exp_desk_screen.dart';
 import 'package:rro_web/ui/screen/profile/pro_desk_screen.dart';
 import 'package:rro_web/ui/screen/project/project_desk_screen.dart';
+import '../../ui/screen/home/home_desk_screen.dart';
 
 class DashCubit extends BaseCubit {
   int _index = DashMenuConstant.home;
@@ -18,7 +19,7 @@ class DashCubit extends BaseCubit {
     Widget child = Container();
     switch (_index) {
       case DashMenuConstant.home:
-        child = Container();
+        child = const HomeDeskScreen();
         break;
       case DashMenuConstant.about:
         child = const ProDeskScreen();

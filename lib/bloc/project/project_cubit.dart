@@ -7,8 +7,8 @@ import 'package:rro_web/utils/json_converter.dart';
 class ProjectCubit extends BaseCubit {
   List<ProjectModel> _projectList = [];
 
-  init(BuildContext context) async {
-    _projectList = await JsonConverter.getProjectModel(context);
+  init() async {
+    _projectList = await JsonConverter.getProjectModel();
     refresh();
   }
 

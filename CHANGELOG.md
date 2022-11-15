@@ -1,3 +1,10 @@
+# 1.0.0+6
+* Fix Assets Images Name
+* Fix Json Converter
+* Create Home Screen For Desktop
+* Fix Gallery Detail Modal
+* Add Firebase Hosting Config
+
 # 0.0.5+5
 * Add Favicon
 * Add Loading Gif
