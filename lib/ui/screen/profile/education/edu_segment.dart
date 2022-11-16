@@ -10,8 +10,9 @@ import '../../../../utils/colors.dart';
 import '../../../../utils/texts.dart';
 import '../../../widgets/space.dart';
 
-class EduDeskSegment extends StatelessWidget {
-  const EduDeskSegment({Key? key}) : super(key: key);
+class EduSegment extends StatelessWidget {
+  final bool isDesktop;
+  const EduSegment({Key? key, this.isDesktop = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +21,14 @@ class EduDeskSegment extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        titleSegment("Education"),
-        Space.vMedium,
+        titleSegment("Education", isDesktop: isDesktop),
+        isDesktop ? Space.vMedium : Space.vSmall,
         Column(
           children: _itemList(list),
         )
       ],
     );
   }
-
-
 
   List<Widget> _itemList(List<EduModel> list) {
     List<Widget> children = [];
@@ -54,7 +53,7 @@ class EduDeskSegment extends StatelessWidget {
         isFirst: isFirst,
         isLast: isLast,
         indicatorStyle: indicatorStyle ??
-            IndicatorStyle(width: 13.sp, color: systemPrimaryColor),
+            IndicatorStyle(width: isDesktop ? 13.sp : 14.sp, color: systemPrimaryColor),
         startChild: startChild,
         endChild: endChild,
         alignment: TimelineAlign.start);
@@ -70,24 +69,24 @@ class EduDeskSegment extends StatelessWidget {
         children: [
           Text(
             model.year,
-            style: smallContentPrimary,
+            style: smallContentPrimary.copyWith(fontSize: isDesktop ? 10.sp : 14.sp),
           ),
           Space.vSmallest,
           Text(
             model.degree,
-            style: contentPrimaryBold.copyWith(fontSize: 13.sp),
+            style: contentPrimaryBold.copyWith(fontSize: isDesktop ? 13.sp : 17.sp),
           ),
           Space.vSmallest,
           Text(
             model.placeStudy,
-            style: contentPrimaryBold,
+            style: contentPrimaryBold.copyWith(fontSize: isDesktop ? 12.sp : 16.sp),
           ),
           Space.vSmallest,
           Visibility(
             visible: model.gpa != null,
             child: Text(
               "GPA : ${model.gpa}",
-              style: contentPrimary,
+              style: contentPrimary.copyWith(fontSize: isDesktop ? 12.sp : 16.sp),
             ),
           )
         ],

@@ -3,12 +3,45 @@ import 'package:flutter/material.dart';
 import 'package:rro_web/bloc/base/base_cubit.dart';
 import 'package:rro_web/constant/dashboard_constant.dart';
 import 'package:rro_web/ui/screen/experience/exp_desk_screen.dart';
+import 'package:rro_web/ui/screen/experience/exp_mob_screen.dart';
+import 'package:rro_web/ui/screen/home/home_mob_screen.dart';
 import 'package:rro_web/ui/screen/profile/pro_desk_screen.dart';
-import 'package:rro_web/ui/screen/project/project_desk_screen.dart';
+import 'package:rro_web/ui/screen/project/project_screen.dart';
 import '../../ui/screen/home/home_desk_screen.dart';
+import '../../ui/screen/profile/pro_mob_screen.dart';
 
 class DashCubit extends BaseCubit {
   int _index = DashMenuConstant.home;
+
+  late int _currentPageSelected;
+  late List<Widget> _pages;
+  late PageController _pageController;
+
+  initMobile() {
+    _initPages();
+    _initPageController();
+    refresh();
+  }
+
+  _initPageController() {
+    _currentPageSelected = 0;
+    _pageController = PageController(initialPage: _currentPageSelected);
+  }
+
+  _initPages() {
+    _pages = [
+      const HomeMobScreen(),
+      const ProMobScreen(),
+      const ExpMobScreen(),
+      const ProjectScreen()
+    ];
+  }
+
+  onTabTapped(int index) {
+    _currentPageSelected = index;
+    _pageController.jumpToPage(_currentPageSelected);
+    refresh();
+  }
 
   _setIndex(int index) {
     _index = index;
@@ -28,12 +61,24 @@ class DashCubit extends BaseCubit {
         child = const ExpDeskScreen();
         break;
       case DashMenuConstant.project:
-        child = const ProjectDeskScreen();
+        child = const ProjectScreen();
         break;
     }
 
     return child;
   }
+
+  @override
+  Future<void> close() {
+    _pageController.dispose();
+    return super.close();
+  }
+
+  PageController get pageController => _pageController;
+
+  List<Widget> get pages => _pages;
+
+  int get currentPageSelected => _currentPageSelected;
 
   List<CollapsibleItem> get items {
     return [

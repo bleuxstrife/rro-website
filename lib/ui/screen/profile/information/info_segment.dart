@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:rro_web/bloc/profile/pro_cubit.dart';
 import 'package:rro_web/ui/widgets/space.dart';
 
+import '../../../../utils/texts.dart';
 import '../../../widgets/minor_ui.dart';
 
-class InfoDeskSegment extends StatelessWidget {
-  const InfoDeskSegment({Key? key}) : super(key: key);
+class InfoSegment extends StatelessWidget {
+  final bool isDesktop;
+  const InfoSegment({Key? key, this.isDesktop = true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +18,8 @@ class InfoDeskSegment extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        titleSegment("Information"),
-        Space.vMedium,
-        Space.vMedium,
+        titleSegment("Information", isDesktop: isDesktop),
+        isDesktop ? Space.vLarge : Space.vMedium,
         _standardBuildItemRow(labelText: "Full Name", contentText: info.name),
         Space.vSmall,
         _standardBuildItemRow(
@@ -45,9 +47,12 @@ class InfoDeskSegment extends StatelessWidget {
 
   _standardBuildItemRow(
       {required String labelText, required String contentText}) {
+    var style = isDesktop ? null : contentPrimary.copyWith(fontSize: 17.sp);
     return standardBuildItemRow(
       labelText: labelText,
       contentText: contentText,
+      styleLabel: style,
+      styleContent: style,
       flexLabel: 1,
       flexContent: 2,
       enableSeparator: true,

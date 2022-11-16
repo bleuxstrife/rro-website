@@ -10,7 +10,7 @@ import '../../utils/colors.dart';
 
 class HomeCubit extends BaseCubit {
   List<ContactModel> get getAllContact {
-    final size = 15.sp;
+    final size = Device.screenType == ScreenType.desktop ? 15.sp : 18.sp;
     return [
       ContactModel(
           name: "Github",

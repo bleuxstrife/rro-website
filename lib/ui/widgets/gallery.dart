@@ -11,7 +11,10 @@ class Gallery extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isDesktop = Device.screenType == ScreenType.desktop;
     return AlertDialog(
+      insetPadding: EdgeInsets.symmetric(
+          horizontal: isDesktop ? 40.0 : 24.0, vertical: 24.0),
       backgroundColor: systemWhiteColor,
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(4.0))),
@@ -19,7 +22,8 @@ class Gallery extends StatelessWidget {
       title: Row(children: [
         Expanded(
             child: Text("Gallery",
-                style: contentPrimaryBold.copyWith(fontSize: 15.sp))),
+                style: contentPrimaryBold.copyWith(
+                    fontSize: isDesktop ? 15.sp : 18.sp))),
         InkWell(
           child: Icon(
             Icons.close,
@@ -69,7 +73,10 @@ class GalleryDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isDesktop = Device.screenType == ScreenType.desktop;
     return AlertDialog(
+      insetPadding: EdgeInsets.symmetric(
+          horizontal: isDesktop ? 40.0 : 24.0, vertical: 24.0),
       backgroundColor: systemWhiteColor,
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(4.0))),
@@ -77,7 +84,8 @@ class GalleryDetail extends StatelessWidget {
       title: Row(children: [
         Expanded(
             child: Text("Detail",
-                style: contentPrimaryBold.copyWith(fontSize: 15.sp))),
+                style: contentPrimaryBold.copyWith(
+                    fontSize: isDesktop ? 15.sp : 18.sp))),
         InkWell(
           child: Icon(
             Icons.close,
@@ -90,14 +98,14 @@ class GalleryDetail extends StatelessWidget {
         )
       ]),
       contentPadding: const EdgeInsets.all(16),
-      content:_mainSegment(context),
+      content: _mainSegment(context),
     );
   }
 
   Widget _mainSegment(BuildContext context) {
     return Container(
-       width: MediaQuery.of(context).size.width,
-       height:MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
         padding: const EdgeInsets.all(16.0),
         child: PhotoView(
           backgroundDecoration: BoxDecoration(color: systemWhiteColor),

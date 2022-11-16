@@ -42,20 +42,39 @@ standardBuildItemRow(
   );
 }
 
-  Widget titleSegment(String title) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: contentPrimaryBold.copyWith(fontSize: 16.sp),
-        ),
-        Container(
-          width: 15.w,
-          height: 5,
-          color: systemPrimaryColor,
-        )
-      ],
+AppBar standardAppBar(String title,
+        {List<Widget>? action,
+        bool enableBorder = true,
+        bool automaticallyImplyLeading = true,
+        bool? centerTitle}) =>
+    AppBar(
+      title: Text(title),
+      backgroundColor: systemWhiteColor,
+      foregroundColor: systemPrimaryColor,
+      centerTitle: centerTitle ?? true,
+      actions: action,
+      elevation: 1,
+      automaticallyImplyLeading: automaticallyImplyLeading,
     );
-  }
+
+Widget titleSegment(String title, {required bool isDesktop}) {
+  var titleStyle = isDesktop
+      ? contentPrimaryBold.copyWith(fontSize: 16.sp)
+      : contentPrimaryBold.copyWith(fontSize: 19.sp);
+  var lineWidth = isDesktop ? 15.w : 25.w;
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    mainAxisAlignment: MainAxisAlignment.start,
+    children: [
+      Text(
+        title,
+        style: titleStyle,
+      ),
+      Container(
+        width: lineWidth,
+        height: 5,
+        color: systemPrimaryColor,
+      )
+    ],
+  );
+}

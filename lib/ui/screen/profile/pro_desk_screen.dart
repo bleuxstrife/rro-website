@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rro_web/bloc/profile/pro_cubit.dart';
 import 'package:rro_web/model/state/general_state.dart';
-import 'package:rro_web/ui/screen/profile/education/edu_desk_segment.dart';
-import 'package:rro_web/ui/screen/profile/information/info_desk_segment.dart';
-import 'package:rro_web/ui/screen/profile/skill/skill_desk_segment.dart';
+import 'package:rro_web/ui/screen/profile/education/edu_segment.dart';
+import 'package:rro_web/ui/screen/profile/information/info_segment.dart';
+import 'package:rro_web/ui/screen/profile/skill/skill_segment.dart';
 import 'package:rro_web/ui/widgets/circular_loading.dart';
 import 'package:rro_web/ui/widgets/space.dart';
 
@@ -48,7 +48,7 @@ class _ProDeskScreenState extends State<ProDeskScreen>
   }
 
   _buildEduSeg() {
-    return const EduDeskSegment();
+    return const EduSegment();
   }
 
   _buildVerticalSeg() {
@@ -56,10 +56,10 @@ class _ProDeskScreenState extends State<ProDeskScreen>
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: const [
-        InfoDeskSegment(),
+        InfoSegment(),
         Space.vMedium,
         Space.vMedium,
-        SkillDeskSegment()
+        SkillSegment()
       ],
     );
   }
