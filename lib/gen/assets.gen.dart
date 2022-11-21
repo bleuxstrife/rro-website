@@ -38,11 +38,28 @@ class $AssetsImagesGen {
 
   $AssetsImagesMerdekaGen get merdeka => const $AssetsImagesMerdekaGen();
   $AssetsImagesNemobGen get nemob => const $AssetsImagesNemobGen();
+  $AssetsImagesSimpegGen get simpeg => const $AssetsImagesSimpegGen();
   $AssetsImagesTrinusaGen get trinusa => const $AssetsImagesTrinusaGen();
 
   /// List of all assets
   List<dynamic> get values =>
       [icApp16, icApp192, icApp512, icAvatar, icGithub, icWa];
+}
+
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/exp.json
+  String get exp => 'assets/json/exp.json';
+
+  /// File path: assets/json/profile.json
+  String get profile => 'assets/json/profile.json';
+
+  /// File path: assets/json/project.json
+  String get project => 'assets/json/project.json';
+
+  /// List of all assets
+  List<String> get values => [exp, profile, project];
 }
 
 class $AssetsImagesMerdekaGen {
@@ -211,6 +228,59 @@ class $AssetsImagesNemobGen {
   $AssetsImagesNemobOrderGen get order => const $AssetsImagesNemobOrderGen();
   $AssetsImagesNemobReservationGen get reservation =>
       const $AssetsImagesNemobReservationGen();
+}
+
+class $AssetsImagesSimpegGen {
+  const $AssetsImagesSimpegGen();
+
+  /// File path: assets/images/simpeg/simpeg_001.jpeg
+  AssetGenImage get simpeg001 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_001.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_002.jpeg
+  AssetGenImage get simpeg002 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_002.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_003.jpeg
+  AssetGenImage get simpeg003 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_003.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_004.jpeg
+  AssetGenImage get simpeg004 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_004.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_005.jpeg
+  AssetGenImage get simpeg005 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_005.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_006.jpeg
+  AssetGenImage get simpeg006 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_006.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_007.jpeg
+  AssetGenImage get simpeg007 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_007.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_008.jpeg
+  AssetGenImage get simpeg008 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_008.jpeg');
+
+  /// File path: assets/images/simpeg/simpeg_009.jpeg
+  AssetGenImage get simpeg009 =>
+      const AssetGenImage('assets/images/simpeg/simpeg_009.jpeg');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+        simpeg001,
+        simpeg002,
+        simpeg003,
+        simpeg004,
+        simpeg005,
+        simpeg006,
+        simpeg007,
+        simpeg008,
+        simpeg009
+      ];
 }
 
 class $AssetsImagesTrinusaGen {
@@ -503,6 +573,7 @@ class Assets {
   Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsJsonGen json = $AssetsJsonGen();
 }
 
 class AssetGenImage {

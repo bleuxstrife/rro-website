@@ -7,7 +7,17 @@
             "Firebase Notification",
             "Html Editor"
         ],
-        "gallery": [],
+        "gallery": [
+             "assets/images/simpeg/simpeg_001.jpeg",
+             "assets/images/simpeg/simpeg_002.jpeg",
+             "assets/images/simpeg/simpeg_003.jpeg",
+             "assets/images/simpeg/simpeg_004.jpeg",
+             "assets/images/simpeg/simpeg_005.jpeg",
+             "assets/images/simpeg/simpeg_006.jpeg",
+             "assets/images/simpeg/simpeg_007.jpeg",
+             "assets/images/simpeg/simpeg_008.jpeg",
+             "assets/images/simpeg/simpeg_009.jpeg"
+        ],
         "github_url": null,
         "play_store_url": "https://play.google.com/store/apps/details?id=com.simpeg.kotaserang",
         "app_store_url": null,

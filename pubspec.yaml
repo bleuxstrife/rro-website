@@ -3,7 +3,7 @@ description: My Portoflio Websiter.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.1+7
+version: 1.0.2+8
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
@@ -63,6 +63,7 @@ flutter:
     - assets/images/nemob/order/
     - assets/images/nemob/reservation/
     - assets/images/merdeka/
+    - assets/images/simpeg/
   fonts:
     - family: Proxima
       fonts:
