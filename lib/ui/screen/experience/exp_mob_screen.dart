@@ -65,7 +65,7 @@ class _ExpMobScreenState extends State<ExpMobScreen>
       children.add(_timeLine(endChild: _endChild(e)));
     }
     children.add(
-        _timeLine(indicatorStyle: _pointIndicator("Dec 2022"), isLast: true));
+        _timeLine(indicatorStyle: _pointIndicator("Present"), isLast: true));
     return children;
   }
 

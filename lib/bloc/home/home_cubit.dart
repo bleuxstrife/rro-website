@@ -14,8 +14,10 @@ class HomeCubit extends BaseCubit {
     return [
       ContactModel(
           name: "Github",
-          icon: Assets.images.icGithub
-              .svg(color: systemWhiteColor, width: size, height: size),
+          icon: Assets.images.icGithub.svg(
+              colorFilter: ColorFilter.mode(systemWhiteColor, BlendMode.srcIn),
+              width: size,
+              height: size),
           onClicked: () => launchUrlString(githubUrl)),
       ContactModel(
           name: "Phone",
@@ -27,8 +29,10 @@ class HomeCubit extends BaseCubit {
           onClicked: () => launchUrlString(telUrl)),
       ContactModel(
           name: "Whatsapp",
-          icon: Assets.images.icWa
-              .svg(color: systemWhiteColor, width: size, height: size),
+          icon: Assets.images.icWa.svg(
+              colorFilter: ColorFilter.mode(systemWhiteColor, BlendMode.srcIn),
+              width: size,
+              height: size),
           onClicked: () => launchUrlString(whatsappUrl)),
       ContactModel(
           name: "Email",

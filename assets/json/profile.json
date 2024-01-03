@@ -10,10 +10,12 @@
             "Java",
             "Kotlin",
             "Dart",
-            "SQL"
+            "SQL",
+            "C#"
         ],
         "tools": [
             "Android Studio",
+            "Visual Studio",
             "Visual Studio Code",
             "Navicat",
             "Xcode"
@@ -23,20 +25,13 @@
             "Microsoft Azure",
             "Github",
             "Gitlab",
-            "Azure DevOps",
             "MVC Architecture & OOP",
             "Postman",
             "Flutter BLOC State Management"
         ]
     },
     "education": [
-        {
-            "place_study": "Gunadarma University",
-            "degree": "Information Management System - Master’s Degree (S2)",
-            "location": "Depok, Indonesia",
-            "gpa": "3.54",
-            "year": "2014 - 2017"
-        },
+       
         {
             "place_study": "Gunadarma University",
             "degree": "Informatics Engineering - Bachelor’s Degree (S1) ",
@@ -53,3 +48,4 @@
         }
     ]
 }
+

@@ -46,7 +46,7 @@
         "company": "Freelance",
         "position": "Mobile Developer",
         "start_date": "May 2022",
-        "end_date": "Present",
+        "end_date": "February 2023",
         "tool":[],
         "task": [
             "Work with client to produce good apps",
@@ -55,6 +55,18 @@
             "Create Incident module for incident Reporting",
             "Create Hazard module for Hazard Reporting",
             "Create a absent module"
+        ]
+    },
+    {
+        "company": "PT Pilihan Utama Indonesia",
+        "position": "IT Staff",
+        "start_date": "March 2023",
+        "end_date": "Present",
+        "tool":[],
+        "task": [
+            "Work with team to maintain Nemob Apps including Mobile Apps, Front-End & Back-End",
+            "Maintain GPS Application",
+            "Work with team to setting and installation GPS Device for car"
         ]
     }
 ]

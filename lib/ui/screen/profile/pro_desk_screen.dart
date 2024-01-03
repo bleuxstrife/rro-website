@@ -52,10 +52,10 @@ class _ProDeskScreenState extends State<ProDeskScreen>
   }
 
   _buildVerticalSeg() {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
-      children: const [
+      children:  [
         InfoSegment(),
         Space.vMedium,
         Space.vMedium,

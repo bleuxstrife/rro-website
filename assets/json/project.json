@@ -90,11 +90,14 @@
     },
     {
         "name": "Nemob",
-        "desc": "This project was for maintain and enhance the mobile applications that are useful for making it easier for customers to rent a car.",
+        "desc": "This project was for maintain and enhance the Nemob applications that are useful for making it easier for customers to rent a car.",
         "tools": [
             "Flutter",
             "Firebase Notification",
-            "Midtrans"
+            "Midtrans",
+            ".Net",
+            "C#",
+            "Kendo JS"
         ],
         "gallery": [
             "assets/images/nemob/login/nemob_login_001.jpg",

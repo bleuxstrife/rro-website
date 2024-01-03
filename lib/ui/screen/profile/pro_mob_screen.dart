@@ -40,11 +40,11 @@ class _ProMobScreenState extends State<ProMobScreen>
   }
 
   _buildContent() {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children:  [
             InfoSegment(
               isDesktop: false,
             ),
