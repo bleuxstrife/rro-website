@@ -1,3 +1,6 @@
+# 1.0.4+11
+* Update SDK to 3.19.6
+* Update CV 02052024
 # 1.0.4+10
 * Update SDK to 3.16.5
 * Update CV 01012024

@@ -15,10 +15,6 @@ const String githubUrl = "https://github.com/bleuxstrife";
 const String whatsappUrl = "whatsapp://send?phone=+6281285360029";
 const String emailUrl = "mailto:reno.rizky.ollantino@gmail.com";
 const String telUrl = "tel:+6281285360029";
-<<<<<<< HEAD
-const String cvUrl = "https://1drv.ms/b/s!ApWNiqWX77ammUbzPvLo49cqdxhA?e=SCXKSj"; 
-=======
-const String cvUrl = "https://1drv.ms/b/s!ApWNiqWX77ammUbzPvLo49cqdxhA?e=SCXKSj";  
->>>>>>> refs/remotes/origin/master
+const String cvUrl = "https://1drv.ms/b/c/a6b6ef97a58a8d95/EcdYA44bEHJImGVy-Lgtlu0BiLJPlbjtVuVkm0LMER1wmw?e=0S1hY1";  
 
 typedef ContactOnClicked = void Function();
