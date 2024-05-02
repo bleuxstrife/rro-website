@@ -43,30 +43,28 @@
         ]
     },
     {
-        "company": "Freelance",
-        "position": "Mobile Developer",
-        "start_date": "May 2022",
-        "end_date": "February 2023",
-        "tool":[],
-        "task": [
-            "Work with client to produce good apps",
-            "Developing a mobile application for user from City Government, which allows users to easy take attendance, request paid leave, and display employee information",
-            "Developed a mobile applications for the safety of mining operation",
-            "Create Incident module for incident Reporting",
-            "Create Hazard module for Hazard Reporting",
-            "Create a absent module"
-        ]
-    },
-    {
         "company": "PT Pilihan Utama Indonesia",
         "position": "IT Staff",
         "start_date": "March 2023",
-        "end_date": "Present",
+        "end_date": "January 2024",
         "tool":[],
         "task": [
             "Work with team to maintain Nemob Apps including Mobile Apps, Front-End & Back-End",
             "Maintain GPS Application",
             "Work with team to setting and installation GPS Device for car"
+        ]
+    },
+    {
+        "company": "Freelance",
+        "position": "Mobile Developer",
+        "start_date": "May 2022",
+        "end_date": "Present",
+        "tool":[],
+        "task": [
+            "Work with client to produce good apps",
+            "Developing a mobile application for user from City Government, which allows users to easy take attendance, request paid leave, and display employee information",
+            "Developed a mobile applications for the safety of mining operation",
+            "Helping the mobile dev team to fix bugs in online news applications"
         ]
     }
 ]
